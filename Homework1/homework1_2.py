@@ -4,3 +4,8 @@
 time = int(input('Введите время в секундах: '))
 
 print(f"{time/3600:.0f}:{time/60:.0f}:{time}")
+# второй вариант:
+time2 = time % 3600
+time3 = time2 % 60
+print(f"{time/3600:.0f}:{time2/60:.0f}:{time3:.0f}")
+
