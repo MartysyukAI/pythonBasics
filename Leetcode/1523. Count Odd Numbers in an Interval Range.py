@@ -22,7 +22,7 @@ elif a > b:
     print('Mixed up low and high number\nTry again')
 else:
     for i in range(a, b+1):
-        if i % 2 ==1:
+        if i % 2 != 0:
             x.append(i)
 print(len(x))
 print(f'The odd numbers between {a} and {b} are {x}')
