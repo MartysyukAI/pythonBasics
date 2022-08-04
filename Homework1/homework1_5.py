@@ -3,3 +3,18 @@
 # Выведите соответствующее сообщение. Если фирма отработала с прибылью, вычислите рентабельность выручки
 # (соотношение прибыли к выручке). Далее запросите численность сотрудников фирмы и определите прибыль фирмы
 # в расчете на одного сотрудника.
+
+revenue = int(input('enter revenue for 1 year'))
+costs = int(input('enter costs for 1 year'))
+if revenue - costs > 0:
+    profit = revenue - costs
+    print(f"Фирма работает с прибылью {profit} рублей")
+    profitability = revenue/costs
+    print(f'Показатель рентабельности фирмы равен {profitability} ')
+    num_worker = int(input('введите количество сотрудников фирмы'))
+    profitOneWorker = profit/num_worker
+    print(f'прибыль фирмы в расчете на одного сотрудника равна {profitOneWorker} рублей')
+
+else:
+    print("Фирма работает в убыток")
+
