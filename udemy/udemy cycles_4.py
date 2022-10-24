@@ -1,7 +1,7 @@
 first_list = [1, 2, 3, 4, 5, 6]
 second_list = [11, 12, 13, 14, 15]
 
-merged_list = []
+'''merged_list = []
 for x in first_list:
     if x % 2 != 0:
         merged_list.append(x)
@@ -9,12 +9,26 @@ for x in second_list:
     if x % 2 == 0:
         merged_list.append(x)
 
-print(merged_list)
+print(merged_list)'''
+
+odd = [i for i in first_list if i % 2 != 0]
+evens = [i for i in second_list if i % 2 == 0]
+joined_list = odd + evens
+print(joined_list)
+
+
+
+
+
+
+
+
+
 
 '''Компрехейшн:'''
 
-odd = [x for x in first_list if x % 2 != 0]
+'''odd = [x for x in first_list if x % 2 != 0]
 evens = [x for x in second_list if x % 2 == 0]
 merged_list = odd + evens
 
-print(f'Merged list: {merged_list}')
+print(f'Merged list: {merged_list}')'''
