@@ -3,7 +3,7 @@
 # элементов необходимо использовать функцию input().
 
 my_list = [i for i in input('Введите любое количество цифр через пробел: ').split()]
-
+"""
 idx = 0
 if len(my_list) % 2 == 0:
     while idx < len(my_list):
@@ -19,4 +19,15 @@ else:
         idx += 2
 
 print(my_list)
+"""
+idx = 0
+if len(my_list) % 2 == 0:
+    while idx < len(my_list):
+        my_list[0 + idx], my_list[1 + idx] = my_list[1 + idx], my_list[0+idx]
+        idx += 2
+else:
+    while idx < len(my_list) - 1:
+        my_list[0 + idx], my_list[1 + idx] = my_list[1 + idx], my_list[0+idx]
+        idx += 2
 
+print(my_list)
