@@ -1,9 +1,13 @@
+c = int(input('введите число'))
+v = int(input('введите число отличное от нуля'))
+
+
 def division(a, b):
     if b == 0:
         print('Делить на ноль нельзя')
     else:
         div = a / b
-    	print(div)
+        print(div)
 
 
-print(division(2, 2))
+print(division(c, v))
